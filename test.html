@@ -4,189 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../lab03/test.css">
+    <link rel="stylesheet" href="./test.css">
     <style>
-        .container {
-          display: grid;
-          grid-template-areas:
-            "header header"
-            "menu content"
-            "footer footer";
-          grid-template-columns: 1fr 3fr;
-          gap: 5px;
-          background-color: #2196F3;
-          padding: 5px;
-        }
-        .container > div {
-          background-color: rgba(255, 255, 255);
-          padding: 10px;
-        }
-        .container > div.header {
-          grid-area: header;
-          text-align: center;
-        }
-        .container > div.menu {
-          grid-area: menu;
-          display: flex;
-          flex-direction: column;
-          margin: 50px;
-        }
-        .container > div.content {
-          grid-area: content;
-          margin: 50px;
-          display: flex;
-          flex-direction: column;
-          justify-items: center;
-          align-items: center;
-          
-        }
-        .container > div.footer {
-            background-color: rgba(3, 2, 32, 0.932);
-          grid-area: footer;
-          display: grid;
-          grid-template-areas:
-            "f1 f2 f5"
-            "f3 f4 f5";
-          grid-template-columns: 3fr 1fr 1fr;
-          gap: 5px;
-          color: white;
-        }
-        #header{
-            display: flex;
-            justify-content: space-between;
-        }
-        #div_logo{
-            display: flex;
-            justify-content: space-between;
-           
-        }
-        #div_logo input{
-            border-radius: 10px;
-            margin: 8px;
-            border: 0px solid red;
-            background-color: lightgray;            
-        }
-        #menu{
-            width: 40%;
-            display: flex;
-            justify-content: space-between;
-        }
-        #menu li{
-            list-style: none;
-            margin: 5px;
-        }
-        #div_setting{
-            display: flex;
-            align-items: center;
-        }
-        #div_setting img{
-            height: 50px;
-            
-        }
-        #setting img{
-            height: 20px;
-           
-        }
-        #setting p{
-            line-height: 30px;
-           
-        }
-        #setting{
-            display: flex;
-            justify-content: center;
-            margin: 5px;
-            align-items: center;
-            background-color: pink;
-            border-radius: 40px;
-            height: 40px;
-            width: 140px;
-        }
-        #filter{
-            display: flex;
+        .f1{
             justify-content: left;
-            align-items: center;
+            padding-right: 350px;
         }
-        #filter img{
-            margin-right: 5px;
-            width: 25px;
-            height: 25px;
+        .f1 input{
+            border-radius: 10px;
+            height: 30px;
+            line-height: 25px;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
         }
-        #type-row{
+        .f1 button{
+            border-radius: 10px;
+            height: 30px;
+            line-height: 25px;
+            cursor: pointer;
+            background-color: rgb(243, 75, 134);
+            color: aliceblue;
+            margin: 0px;
+            border: 0px;
+        }
+        .f3{
+            align-items: end;
+            padding-right: 20px;
+        }
+        #f3{
             display: flex;
             justify-content: space-around;
-            align-items: center;
-            padding-right: 70px;
-        }
-        #type-item{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #rating-row{
-           margin-bottom: 15px;
-        }
-        #filter button{
-            width: 100%;
-            color: aliceblue;
-            background-color: lightcoral;
-            border: 0px;
-            border-radius: 10px;
-            height: 25px;
-            line-height: 20px;
-        }
-        #filter button:hover{
-            cursor: pointer;
-            width: 100%;
-            color: aliceblue;
-            background-color: rgb(211, 166, 166);
-            border: 0px;
-            border-radius: 10px;
-            height: 25px;
-            line-height: 20px;
-        }
-        #taps{
-            display: flex;
-            justify-content: center;
-        }
-        #tap1{
-            margin: 10px;
-            border-radius: 15px;
-            background-color: #70baf79d;
-            color: #008bfd;
-            height: 30px;
-            line-height: 30px;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-        #tap2{
-            margin: 10px;
-            border-radius: 15px;
-            background-color: #70f7929d;
-            color: #00fd94;
-            height: 30px;
-            line-height: 30px;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-        #tap3{
-            margin: 10px;
-            border-radius: 15px;
-            background-color: #ba70f79d;
-            color: #8300fd;
-            height: 30px;
-            line-height: 30px;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-        #tap4{
-            margin: 10px;
-            border-radius: 15px;
-            background-color: #70d8f79d;
-            color: #00fdb1;
-            height: 30px;
-            line-height: 30px;
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-top: 50px;
+            padding-right: 350px;
         }
     </style>
 </head>
@@ -319,11 +169,38 @@
     <div class="f1">
         <h3>About Us</h3>
         <h4>Wellcome to website, a wonderful place to explore and learn how to cook like a pro</h4>
+        <div id="footer-seach">
+            <input type="text" id="inp-footer" placeholder="Enter your email"> 
+            <button>Send</button>
+        </div>       
     </div>
-    <div class="f2"></div>
-    <div class="f3"></div>
-    <div class="f4"></div>
-    <div class="f5"></div>
+    <div class="f2">
+       <h3>Learn More</h3>
+       <p>Our cook</p>
+       <p>See Our Features</p>
+       <p>FAQ</p>
+    </div>
+    <div class="f3">
+        <div id="f3">
+            <img src="./src/image/chefifywhite.png" alt="">
+            <p>2023 Chefifi company</p>
+            <p>Tems Servicel Privocy</p>
+        </div>
+    </div>
+    <div class="f4">
+        <h3>Shop</h3>
+        <p>Gift Subscription</p>
+        <p>Send Us Feedback</p>
+    </div>
+    <div class="f5">
+        <h3>Recipe</h3>
+        <p>What to Cook This Week</p>
+        <p>Pasta</p>
+        <p>Dinner</p>
+        <p>Healthy</p>
+        <p>Vegan</p>
+        <p>Chrismas</p>
+    </div>
   </div>
 </div>
 </body>
