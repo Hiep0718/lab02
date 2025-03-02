@@ -6,38 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./test.css">
     <style>
-        .f1{
-            justify-content: left;
-            padding-right: 350px;
-        }
-        .f1 input{
-            border-radius: 10px;
-            height: 30px;
-            line-height: 25px;
-            margin: 0px;
-            padding: 0px;
-            border: 0px;
-        }
-        .f1 button{
-            border-radius: 10px;
-            height: 30px;
-            line-height: 25px;
-            cursor: pointer;
-            background-color: rgb(243, 75, 134);
-            color: aliceblue;
-            margin: 0px;
-            border: 0px;
-        }
-        .f3{
-            align-items: end;
-            padding-right: 20px;
-        }
-        #f3{
-            display: flex;
-            justify-content: space-around;
-            padding-top: 50px;
-            padding-right: 350px;
-        }
+        
     </style>
 </head>
 <body>
@@ -51,11 +20,11 @@
     </div>
     
     <ul id="menu">
-        <li>What to cook</li>
-        <li>Recipes</li>
-        <li>Ingrestients</li>
-        <li>Occasions</li>
-        <li>AboutUS</li>
+        <li><a href="#">What to cook</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Ingrestients</a></li>
+        <li><a href="#">Occasions</a></li>
+        <li><a href="#">AboutUS</a></li>
     </ul>
     <div id="div_setting">
         <div id="setting">
@@ -67,9 +36,13 @@
     </div>
   </div>
   <div class="menu">
-        <div id="filter">
+        <div id="filter1">
             <img src="./src/image/list_filter.png" alt="">
             <h3>Filter</h3>
+        </div>
+        <div id="filter">
+            <h3>Time</h3>
+            <img src="./src/image/Chevron up large 1.png" alt="">
         </div>
         <div id="type">
             <div id="type-row">
@@ -115,6 +88,7 @@
         </div>
         <div id="filter">
             <h3>Time</h3>
+            <img src="./src/image/Chevron up large 1.png" alt="">
         </div>
         <div id="type">
             <div id="type-row" style="padding: 0px; height: 20px;">
@@ -127,6 +101,7 @@
         </div>
         <div id="filter">
             <h3>Rating</h3>
+            <img src="./src/image/Chevron up large 1.png" alt="">
         </div>
         <div id="rating">
             <div id="rating-row" style="padding: 0px; height: 20px;">
@@ -151,7 +126,10 @@
             </div>            
         </div>
         <div id="filter">
-            <button>Apply</button>
+            <div class="conten">
+                <button>Apply</button>
+            </div>
+            
         </div>
   </div>
   <div class="content">
